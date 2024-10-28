@@ -51,5 +51,11 @@ ctx.strokeStyle = '#e74c3c';
 ctx.lineWidth = 5;
 ctx.strokeRect(250, 50, 150, 100);
 
+// Add Color Selection and Canvas Clearing
+clearButton.addEventListener('click', () => {
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+});
+
+
 
 
