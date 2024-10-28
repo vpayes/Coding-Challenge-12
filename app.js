@@ -32,3 +32,24 @@ canvas.addEventListener('mousemove', (event) => {
     ctx.strokeStyle = colorInput.value;
 })
 
+//Implement Shape Drawing Logic 
+// Drawing a Line
+ctx.beginPath();  // Begin a new path
+ctx.moveTo(50, 200);  // Move the pen to starting point (50, 200)
+ctx.lineTo(300, 200);  // Draw a line to the point (300, 200)
+ctx.strokeStyle = '#2ecc71';
+ctx.lineWidth = 4;
+ctx.stroke();  // Render the line
+
+// Drawing a Rectangle 
+// Filled rectangle
+ctx.fillStyle = '#3498db';
+ctx.fillRect(50, 50, 150, 100);
+
+// Rectangle outline
+ctx.strokeStyle = '#e74c3c';
+ctx.lineWidth = 5;
+ctx.strokeRect(250, 50, 150, 100);
+
+
+
